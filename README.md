@@ -58,6 +58,17 @@ workerを先に実行するとどうなるかも試して。
 ./get_statemachine_status.sh
 ```
 
+こういうのも試して。
+```sh
+./start_statemachine.sh &
+./start_statemachine.sh &
+./start_statemachine.sh
+./worker1.py &
+./worker1.py &
+./worker1.py
+```
+
+
 # 削除
 
 ```sh
