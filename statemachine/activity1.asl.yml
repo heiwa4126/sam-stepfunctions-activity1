@@ -1,0 +1,10 @@
+Comment: "Activity example from https://medium.com/@yuvarajmailme/step-function-activity-with-python-c007178037af"
+StartAt: Full Name
+States:
+  #----
+  Full Name:
+    Type: Task
+    Resource: ${NameActivityArn}
+    # Workerを待ち受けるのだが、タイムアウトはどれぐらい?
+    # ResultPath: $.FullName
+    End: true
